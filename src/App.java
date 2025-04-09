@@ -1,5 +1,16 @@
 public class App {
     public static void main(String[] args) throws Exception {
+
+        EjerciciosRecursivos ejercicios = new EjerciciosRecursivos();
+        int resultadoFibonacci = ejercicios.fibonacci(5); 
+        System.out.println("Fibonacci(6) = " + resultadoFibonacci);
+
+        // Llamar al método sumaConsecutivos
+        int resultadoSuma = ejercicios.sumaConsecutivos(5); 
+        System.out.println("Suma consecutivos(5) = " + resultadoSuma);
+    }
+
+    /* 
         int n = 5;
         int resultadoFinal = factorial(n);
         System.out.println("resultado: " + resultadoFinal);
@@ -16,5 +27,7 @@ public class App {
         return resultado;
 
     }
+    */
+    
 }
 //los metedos estaticos solo pueden llarmar a estaticos, amenos que esten instaciados a una clase
