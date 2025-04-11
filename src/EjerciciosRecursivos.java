@@ -45,6 +45,15 @@ public class EjerciciosRecursivos {
         }
     }
 
+    /*
+     * Si el número es menor que 10, lo cual significa que solo tiene 
+     * un dígito, se devuelve el número mismo. En caso contrario, 
+     * se extrae el último dígito utilizando el operador módulo 
+     * % y se calcula el los dígitos menos el ultimo utilizando
+     * la división entera /10. Luego, se realiza una llamada 
+     * recursiva a sumaDigitos con el resto y se suma el 
+     * último dígito
+     */
 
     public int sumaDigitos(int n){
         if(n < 10){
@@ -56,4 +65,21 @@ public class EjerciciosRecursivos {
                     + ultimoDigito;
         }
     }
-}
+
+    public static void imprimirDescendente(int n) {
+        if (n < 1) {
+            return;
+        } else {
+            System.out.print(n + " ");
+            imprimirDescendente(n - 1);
+        }
+    }
+
+    public static int reverso(int n, int invertido) {
+        if (n == 0) {
+            return invertido;
+        }
+        return reverso(n / 10, invertido * 10 + n % 10);
+    }
+}      
+    

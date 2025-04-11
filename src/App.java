@@ -2,6 +2,8 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         EjerciciosRecursivos ejercicios = new EjerciciosRecursivos();
+
+        // Llamar al método fibonacci
         int resultadoFibonacci = ejercicios.fibonacci(5); 
         System.out.println("Fibonacci(6) = " + resultadoFibonacci);
 
@@ -9,11 +11,24 @@ public class App {
         int resultadoSuma = ejercicios.sumaConsecutivos(5); 
         System.out.println("Suma consecutivos(5) = " + resultadoSuma);
 
+        // Llamar al método getPotencia
         int resultadoExponente = ejercicios.getPotencia(2, 2);
         System.out.println("Multiplicación de consecutivos = " + resultadoExponente);
 
+        // Llamar al método sumaDígitos
         int resultadoDigitos = ejercicios.sumaDigitos(1234);
         System.out.println("Suma de digitos del número dado = " + resultadoDigitos);
+
+        // imprimir los numeros 
+        int numero = 10; 
+        System.out.print("Orden Descendente:  ");
+        ejercicios.imprimirDescendente(numero);
+        System.out.println();
+
+        //imprimir el reverso
+        int numero1 = 1234; 
+        int resultado1 = ejercicios.reverso(numero1, 0);
+        System.out.println("El número invertido es: " + resultado1);
     }
 
     /* 
