@@ -8,6 +8,12 @@ public class App {
         // Llamar al método sumaConsecutivos
         int resultadoSuma = ejercicios.sumaConsecutivos(5); 
         System.out.println("Suma consecutivos(5) = " + resultadoSuma);
+
+        int resultadoExponente = ejercicios.getPotencia(2, 2);
+        System.out.println("Multiplicación de consecutivos = " + resultadoExponente);
+
+        int resultadoDigitos = ejercicios.sumaDigitos(1234);
+        System.out.println("Suma de digitos del número dado = " + resultadoDigitos);
     }
 
     /* 
